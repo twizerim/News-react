@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after{
+      box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+font-family: 'Playfair Display', serif;
+// font-family: 'Slabo 27px', serif;
+}
