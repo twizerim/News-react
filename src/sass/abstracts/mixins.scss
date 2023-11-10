@@ -1,0 +1,16 @@
+
+
+@mixin flexs($displine, $AlinItem,$justify,$gaps){
+    display: $displine;
+    align-items:$AlinItem ;
+    justify-content: $justify;
+    gap: $gaps;
+}
+
+@mixin button($color,$backgraun){
+    padding: 1rem;
+    color: $color;
+    border-radius:1rem;
+    background-color: $backgraun;
+    width: auto;
+}

@@ -1,0 +1,25 @@
+
+.card-container{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 2rem;
+
+.card{
+    padding: 2rem;
+
+    p{
+        font-size: $font-size-s;
+    }
+    span{
+        font-size: $font-size-s;
+    }
+
+    img{
+        width: 100%;
+    }
+    .btnn{
+        @include flexs(flex,center,center,0rem)
+    }
+}
+}

@@ -1,0 +1,28 @@
+
+.btn {
+    @include button($text-color,$color-tomato);
+    border: 1px solid $color-whit;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+
+    &:hover{
+        transform: translate(3px, -3px);
+        transition: all .3s;
+        background-color: $color-primary;
+    }
+}
+
+button{
+    @include button($text-color,$color-tomato);
+    border: 1px solid $color-whit;
+    border-radius: 1rem;
+    padding: .2rem 2rem;
+    padding: 0.3rem;
+
+    &:hover{
+        transform: translate(3px, -3px);
+        transition: all .3s;
+        background-color: $color-primary;
+    }
+}

@@ -1,0 +1,56 @@
+
+.logo{
+    padding: 2rem 5rem;
+    @include flexs(flex,center,space-between,4rem);
+   
+    .logo-comtainer{
+       img{
+        width: 150px;
+        height: 100px;
+        border-radius: 50%;
+       }
+    }
+    .seach{
+        padding: .7rem;
+    }
+    .nav-link{
+        @include flexs(flex,center,center,4rem);
+        list-style: none;
+
+        li{
+            font-size: $font-size-s-lg;
+
+            a{
+                text-decoration: none;
+            }
+            .coll{
+                @include flexs(flex,center,center,.5rem);
+                align-items: center;
+                background-color: burlywood;
+                padding: .3rem;
+                color:$pragra-color;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.nav-category{
+    background-color: $color-primary;
+    @include flexs(flex,center,center,4rem,);
+    padding: 2rem;
+    list-style: none;
+
+    li{
+        font-size: $font-size-s-lg;
+       
+        .links{
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+}
