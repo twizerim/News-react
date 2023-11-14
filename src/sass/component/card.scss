@@ -1,25 +1,35 @@
 
-.card-container{
+.card-containner{
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
 
 .card{
-    padding: 2rem;
-
+    background-color: #ddd;
+    cursor: pointer;
+    transition: all .3s;
+    
+h2{
+    text-align: center;
+}
     p{
         font-size: $font-size-s;
-    }
-    span{
-        font-size: $font-size-s;
+        padding: 0rem 2rem;
     }
 
     img{
         width: 100%;
+        object-fit: cover;
+        height: 250px;
     }
     .btnn{
-        @include flexs(flex,center,center,0rem)
+        @include flexs(flex,center,center,0rem);
+        padding: 2rem;
     }
-}
+
+    &:hover{
+        transform: translate(4px, -4px);
+    }
 }

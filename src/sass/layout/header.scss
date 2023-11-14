@@ -1,4 +1,11 @@
-
+.headings{
+    background-color: black;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+}
 .logo{
     padding: 2rem 5rem;
     @include flexs(flex,center,space-between,4rem);
