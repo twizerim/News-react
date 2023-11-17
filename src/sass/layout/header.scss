@@ -1,10 +1,7 @@
 .headings{
     background-color: black;
-    z-index: 9999;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    scroll-behavior: smooth;
+   
+    
 }
 .logo{
     padding: 2rem 5rem;
@@ -29,13 +26,12 @@
 
             a{
                 text-decoration: none;
+                color:$text-color 
             }
             .coll{
                 @include flexs(flex,center,center,.5rem);
                 align-items: center;
-                background-color: burlywood;
                 padding: .3rem;
-                color:$pragra-color;
 
                 img{
                     width: 20px;
@@ -48,9 +44,19 @@
 
 .nav-category{
     background-color: $color-primary;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+    
+   
+   
+.catego-link{
     @include flexs(flex,center,center,4rem,);
     padding: 2rem;
     list-style: none;
+
 
     li{
         font-size: $font-size-s-lg;
@@ -60,4 +66,6 @@
             color: $text-color;
         }
     }
+}
+    
 }

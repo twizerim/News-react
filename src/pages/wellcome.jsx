@@ -7,12 +7,14 @@ import pict from "../assets/gedeon.jpg";
 import president from "../assets/kagame.jpeg"
 import uburezi from "../assets/uburezi.jpeg"
 import amavubi from "../assets/amavubi.jpeg"
+import Home from "../component/home";
 
 
 function Wellcome(){
     return (
         <div className="wellcome-container">
             <Headers/>
+            <Home/>
             <div className="card-containner">
                 <Cards photo={pict} name="TWIZERIMAN Gedeon" 
                 destinate="Gedeon arakangurira abantu bobse batuye inkambi no hanze yazo kuza kwiga cording kwiyandikisha ni ubuntu"/>

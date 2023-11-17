@@ -1,28 +1,20 @@
 
-.btn {
-    @include button($text-color,$color-tomato);
-    border: 1px solid $color-whit;
-    border-radius: 1rem;
-    padding: 0.5rem 2rem;
-    display: inline-block;
+.btn{
+    @include flexs(flex,center,center,0rem);
 
-    &:hover{
-        transform: translate(3px, -3px);
-        transition: all .3s;
-        background-color: $color-primary;
-    }
-}
+    button{
+        @include buton($pragra-color,$text-color);
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
 
-button{
-    @include button($text-color,$color-tomato);
-    border: 1px solid $color-whit;
-    border-radius: 1rem;
-    padding: .2rem 2rem;
-    padding: 0.3rem;
 
-    &:hover{
-        transform: translate(3px, -3px);
-        transition: all .3s;
-        background-color: $color-primary;
+        &:hover{
+            transform: translate(-4px,4px);
+            background-color: $color-primary;
+        }
     }
 }
